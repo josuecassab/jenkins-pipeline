@@ -1,0 +1,33 @@
+{
+  "infra_type": "resources",
+  "environments": [
+    {
+        "name": "dv",
+        "credential_name": "gcp_service_account_ctdeploy_sb",
+        "backend_file": "backend.dv.conf",
+        "labels_file": "labels.dv.tfvars.json",
+        "infra_file": "resources.dv.tfvars.json"
+    },
+    {
+        "name": "qa",
+        "credential_name": "gcp_service_account_ctdeploy_sb",
+        "backend_file": "backend.qa.conf",
+        "labels_file": "labels.qa.tfvars.json",
+        "infra_file": "resources.qa.tfvars.json"
+    },
+    {
+        "name": "pr",
+        "credential_name": "gcp_service_account_ctdeploy_sb",
+        "backend_file": "backend.pr.conf",
+        "labels_file": "labels.pr.tfvars.json",
+        "infra_file": "resources.pr.tfvars.json"
+    },
+    {
+        "name": "eds",
+        "credential_name": "gcp_service_account_ctdeploy_sb",
+        "backend_file": "backend.eds.conf",
+        "labels_file": "labels.eds.tfvars.json",
+        "infra_file": "resources.eds.tfvars.json"
+    }
+]
+}

@@ -1,0 +1,10 @@
+{
+    "environments": [
+        {
+            "name": "dev"
+        },
+        {
+            "name": "qa"
+        }
+    ]
+}
